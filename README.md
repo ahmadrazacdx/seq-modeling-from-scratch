@@ -20,16 +20,16 @@ The repository is organized into phases, guiding you from character-level to wor
 ### Phase 1: Character-Level Fundamentals
 *Objective: Derive and implement the core algorithms of recurrence and memory.*
 
-* **[01_RNN_NumPy.ipynb](./char_level_lm/01_RNN_NumPy.ipynb):** Vanilla RNN. Implements the basic recurrence relation `h_t = tanh(Wx + Uh)` and visualizes the vanishing gradient problem in practice.
-* **[02_LSTM_NumPy.ipynb](./char_level_lm/02_LSTM_NumPy.ipynb):** Vanilla LSTM. Constructs the complete four-gate architecture (Forget, Input, Candidate, Output) and the cell state highway that preserves long-term gradients.
-* **[03_GRU_NumPy.ipynb](./char_level_lm/03_GRU_NumPy.ipynb):** Vanilla GRU. Implements the original Gated Recurrent Unit formulation as defined by **Cho et al. (2014)**.
+* **[01_RNN_NumPy.ipynb](./char_level_lm/01_RNN_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/char_level_lm/01_RNN_NumPy.ipynb) Vanilla RNN. Implements the basic recurrence relation `h_t = tanh(Wx + Uh)` and visualizes the vanishing gradient problem in practice.
+* **[02_LSTM_NumPy.ipynb](./char_level_lm/02_LSTM_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/char_level_lm/02_LSTM_NumPy.ipynb) Vanilla LSTM. Constructs the complete four-gate architecture (Forget, Input, Candidate, Output) and the cell state highway that preserves long-term gradients.
+* **[03_GRU_NumPy.ipynb](./char_level_lm/03_GRU_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/char_level_lm/03_GRU_NumPy.ipynb) Vanilla GRU. Implements the original Gated Recurrent Unit formulation as defined by **Cho et al. (2014)**.
 
 ### Phase 2: Word-Level Modeling & Embeddings
 *Objective: Transition from discrete characters to continuous dense vector representations.*
 
-* **[01_RNN_NumPy.ipynb](./word_level_lm/01_RNN_NumPy.ipynb):** Embedding Layers. Replaces one-hot encoding with lookup tables and implements **sparse gradient updates** manually during backpropagation.
-* **[02_LSTM_NumPy.ipynb](./word_level_lm/02_LSTM_NumPy.ipynb):** Word-Level LSTM. Integrates learned embeddings with the LSTM architecture to handle larger vocabularies.
-* **[03_GRU_NumPy.ipynb](./word_level_lm/03_GRU_NumPy.ipynb):** Production Variants. Implements the **PyTorch definition** of the GRU (where the reset gate is applied after matrix multiplication), contrasting it with the academic paper definition.
+* **[01_RNN_NumPy.ipynb](./word_level_lm/01_RNN_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/word_level_lm/01_RNN_NumPy.ipynb) Embedding Layers. Replaces one-hot encoding with lookup tables and implements **sparse gradient updates** manually during backpropagation.
+* **[02_LSTM_NumPy.ipynb](./word_level_lm/02_LSTM_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/word_level_lm/02_LSTM_NumPy.ipynb) Word-Level LSTM. Integrates learned embeddings with the LSTM architecture to handle larger vocabularies.
+* **[03_GRU_NumPy.ipynb](./word_level_lm/03_GRU_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/word_level_lm/03_GRU_NumPy.ipynb) Implements the **PyTorch definition** of the GRU (where the reset gate is applied after matrix multiplication), contrasting it with the academic paper definition.
 
 ### Phase 3: Sequence-to-Sequence Architectures *(Coming Soon)*
 * **01_Encoder_Decoder_GRU_NumPy.ipynb:** Encoder-Decoder. Connects two RNNs to map input sequences to output sequences, establishing the foundation for machine translation.
@@ -68,10 +68,10 @@ Sample: "once upon a time , on a very hot day , a thirsty crow was flying..."
 
 ## References
 
-* **[RNN]** Elman, J. L. (1990). Finding structure in time. *Cognitive Science*, 14(2), 179-211. [[Link](https://crl.ucsd.edu/~elman/Papers/fsit.pdf)]
-* **[LSTM]** Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural Computation*, 9(8), 1735-1780. [[Link](https://www.bioinf.jku.at/publications/older/2604.pdf)]
-* **[GRU]** Cho, K., van Merriënboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk, H., & Bengio, Y. (2014). Learning phrase representations using RNN encoder-decoder for statistical machine translation. *Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)*. [[Link](https://arxiv.org/abs/1406.1078)]
-* **[Adam]** Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. *International Conference on Learning Representations (ICLR)*. [[Link](https://arxiv.org/abs/1412.6980)]
+* **[RNN]** Elman, J. L. (1990). Finding structure in time. *Cognitive Science*, 14(2), 179-211. [PDF](https://jontalle.web.engr.illinois.edu/Public/Elman-FindingStructureinTime.90.pdf)
+* **[LSTM]** Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural Computation*, 9(8), 1735-1780. [PDF](https://www.bioinf.jku.at/publications/older/2604.pdf)
+* **[GRU]** Cho, K., van Merriënboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk, H., & Bengio, Y. (2014). Learning phrase representations using RNN encoder-decoder for statistical machine translation. *Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)*. [arXiv](https://arxiv.org/abs/1406.1078)
+* **[Adam]** Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. *International Conference on Learning Representations (ICLR)*. [arXiv](https://arxiv.org/abs/1412.6980)
 
 ## Feedback
 This repository is a living curriculum. I built this to truly understand the recurrent nets and their dynamics. If you spot a mathematical inconsistency or have a question about a derivation/code, please open an issue.
