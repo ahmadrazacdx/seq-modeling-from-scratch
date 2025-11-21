@@ -33,7 +33,7 @@ The repository is organized into phases, guiding you from character-level to wor
 
 ### Phase 3: Sequence-to-Sequence Architectures
 *Objective: Build complex architectures for mapping variable-length sequences.*
-* **[01_Encoder_Decoder_NumPy.ipynb](./seq2seq/01_Encoder_Decoder_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/seq2seq/01_Encoder_Decoder_NumPy.ipynb) Implements a full Encoder-Decoder architecture with a non-linear **Bridge** layer connecting the two networks. Features **Teacher Forcing** for training and **Autoregressive Inference** for sentence prediction, deriving the full BPTT chain rule across the bridge.
+* **[01_Encoder_Decoder_NumPy.ipynb](./seq_2_seq/01_Encoder_Decoder_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/seq_2_seq/01_Encoder_Decoder_NumPy.ipynb) Implements a full Encoder-Decoder architecture with a non-linear **Bridge** layer connecting the two networks. Features **Teacher Forcing** for training and **Autoregressive Inference** for sentence prediction, deriving the full BPTT chain rule across the bridge.
 
 ##  Implementation Details
 This repository enforces production-grade engineering standards to ensure model convergence and numerical stability:
