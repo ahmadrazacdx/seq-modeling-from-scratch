@@ -31,6 +31,8 @@ The repository is organized into phases, guiding you from character-level to wor
 * **[02_LSTM_NumPy.ipynb](./word_level_lm/02_LSTM_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/word_level_lm/02_LSTM_NumPy.ipynb) Word-Level LSTM. Integrates learned embeddings with the LSTM architecture to handle larger vocabularies.
 * **[03_GRU_NumPy.ipynb](./word_level_lm/03_GRU_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/word_level_lm/03_GRU_NumPy.ipynb) Implements the **PyTorch definition** of the GRU (where the reset gate is applied after matrix multiplication), contrasting it with the academic paper definition.
 
+### Phase 3: Sequence-to-Sequence Architectures
+*Objective: Build complex architectures for mapping variable-length sequences.*
 * **[01_Encoder_Decoder_NumPy.ipynb](./seq2seq/01_Encoder_Decoder_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/seq2seq/01_Encoder_Decoder_NumPy.ipynb) Implements a full Encoder-Decoder architecture with a non-linear **Bridge** layer connecting the two networks. Features **Teacher Forcing** for training and **Autoregressive Inference** for sentence prediction, deriving the full BPTT chain rule across the bridge.
 
 ##  Implementation Details
@@ -64,7 +66,6 @@ This repository enforces production-grade engineering standards to ensure model 
 Iteration 5000 | Loss: 0.4254
 Input:  The crow was thirsty .
 Output: then he got an idea !
-```
 ```
 
 ## References
