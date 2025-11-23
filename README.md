@@ -35,6 +35,7 @@ The repository is organized into phases, guiding you from character-level to wor
 *Objective: Build complex architectures for mapping variable-length sequences.*
 * **[01_Encoder_Decoder_NumPy.ipynb](./seq_2_seq/01_Encoder_Decoder_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/seq_2_seq/01_Encoder_Decoder_NumPy.ipynb) Implements a full Encoder-Decoder architecture with a non-linear **Bridge** layer connecting the two networks. Features **Teacher Forcing** for training and **Autoregressive Inference** for sentence prediction, deriving the full BPTT chain rule across the bridge.
 * **[02_Bahdanau_Attention_NumPy.ipynb](./seq_2_seq/02_Bahdanau_Attention_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/seq_2_seq/02_Bahdanau_Attention_NumPy.ipynb) Overcomes the fixed-vector bottleneck by implementing **Bahdanau (Additive) Attention**. Features a fully differentiable attention mechanism that computes dynamic context vectors ($c_t$) and visualizes the **alignment matrix** to show source-target word relationships.
+* **[03_Luong_Attention_NumPy.ipynb](./seq_2_seq/03_Luong_Attention_NumPy.ipynb):** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ahmadrazacdx/seq-modeling-from-scratch/blob/main/seq_2_seq/03_Luong_Attention_NumPy.ipynb) Upgrades the Bahdanau model to the "Update $\rightarrow$ Look $\rightarrow$ Predict" paradigm. Implements the **General** scoring function (`h_t @ Wa @ h_s`) and introduces the **Attentional Vector** ($\tilde{h}_t$) for final predictions.
 
 ##  Implementation Details
 This repository enforces production-grade engineering standards to ensure model convergence and numerical stability:
@@ -75,7 +76,7 @@ Output: then he got an idea !
 * **[LSTM]** Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural Computation*, 9(8), 1735-1780. [PDF](https://www.bioinf.jku.at/publications/older/2604.pdf)
 * **[GRU/Encoder-Decoder]** Cho, K., van Merriënboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk, H., & Bengio, Y. (2014). Learning phrase representations using RNN encoder-decoder for statistical machine translation. *Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)*. [arXiv](https://arxiv.org/abs/1406.1078)
 * **[Bahdanau Attention]** Bahdanau, D., Cho, K., & Bengio, Y. (2014). *Neural machine translation by jointly learning to align and translate.* International Conference on Learning Representations (ICLR). [arXiv](https://arxiv.org/abs/1409.0473)
-
+* **[Luong Attention]** Luong, M. T., Pham, H., & Manning, C. D. (2015). *Effective Approaches to Attention-based Neural Machine Translation*. EMNLP. [arXiv](https://arxiv.org/abs/1508.04025)
 * **[Adam]** Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. *International Conference on Learning Representations (ICLR)*. [arXiv](https://arxiv.org/abs/1412.6980)
 
 ## Feedback
