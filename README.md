@@ -83,7 +83,7 @@ If you use this work, please cite it using `CITATION.cff` or the following BibTe
 ```bibtex
 @misc{ahmad2025seqmodeling,
   author = {{Ahmad Raza}},
-  title = {Sequence Modeling from Scratch: Rigorous NumPy Implementations of RNNs, LSTMs, and Attention},
+  title = {Sequence Modeling from Scratch: Rigorous NumPy Implementations of RNN, LSTM, GRU, and Attention},
   year = {2025},
   publisher = {GitHub},
   url = {https://github.com/ahmadrazacdx/seq-modeling-from-scratch}
