@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+authors:
+  - name: Ahmad Raza
+    orcid: https://orcid.org/0009-0009-0715-6300
+title: "Sequence Modeling from Scratch: Rigorous NumPy Implementations of RNNs, LSTMs, and Attention"
+version: 1.0.0
+doi: 10.5281/zenodo.17720230
+date-released: 2025-01-26
+url: "https://github.com/ahmadrazacdx/seq-modeling-from-scratch"
+repository-code: "https://github.com/ahmadrazacdx/seq-modeling-from-scratch"
+keywords:
+  - deep-learning
+  - recurrent-neural-networks
+  - lstm
+  - gru
+  - attention-mechanism
+  - numpy
+  - educational
+license: MIT

@@ -1,12 +1,9 @@
-# Sequence Modeling from Scratch
+# Sequence Modeling from Scratch [![DOI](https://zenodo.org/badge/1100355653.svg)](https://doi.org/10.5281/zenodo.17720229)
 
-> *What I cannot create, I do not understand.* — Richard Feynman
-
-**Building RNNs, LSTMs, and GRUs from the ground up in NumPy. 100% Manual Calculus. 0% Autodiff.**
-
+> *What I cannot create, I do not understand.* — **Richard Feynman**
 
 ## Abstract
-Modern deep learning frameworks (PyTorch, TensorFlow) abstract away the underlying calculus of sequence modeling, often treating architectures as black boxes. This work presents a rigorous, from-scratch implementation of fundamental Recurrent Neural Networks (RNNs), Long Short-Term Memory networks (LSTMs), and Gated Recurrent Units (GRUs) using only **NumPy**. I explicitly derive and implement the Backpropagation Through Time (BPTT) algorithms for each architecture, verifying the gradient flow against foundational papers *(Elman, 1990; Hochreiter & Schmidhuber, 1997; Cho et al., 2014)*. This repository serves as a comprehensive educational curriculum for understanding the mathematical internals of sequence modeling, from discrete embedding lookups to the specific gating mechanisms that mitigate the vanishing gradient problem.
+In an era where deep learning frameworks increasingly abstract the underlying mathematics of neural networks, the intuitive grasp of gradient dynamics is often lost. **Designed as a comprehensive educational resource**, this repository presents a rigorous, first-principles reconstruction of sequence modeling architectures spanning Recurrent Neural Networks (RNNs), Long Short-Term Memory networks (LSTMs), Gated Recurrent Units (GRUs), and Encoder-Decoder (Seq2Seq) with Attention, implemented entirely in **NumPy**. Unlike standard tutorials that rely on automatic differentiation engines (e.g., Autograd), this curriculum explicitly derives and implements the Backpropagation Through Time (BPTT). By manually engineering the forward and backward passes, the work exposes the specific algebraic mechanisms that govern memory retention, gradient flow, and attention scoring. The implementations are validated against foundational literature *(Elman, 1990; Hochreiter & Schmidhuber, 1997; Cho et al., 2014; Bahdanau et al., 2014; Luong et al., 2015)*, providing a comprehensive, transparent view into understanding of the algorithms often hidden behind black-box APIs.
 ## Key Learning Outcomes
 By completing this curriculum, you will be able to:
 
@@ -79,6 +76,19 @@ Output: then he got an idea !
 * **[Luong Attention]** Luong, M. T., Pham, H., & Manning, C. D. (2015). *Effective Approaches to Attention-based Neural Machine Translation*. EMNLP. [arXiv](https://arxiv.org/abs/1508.04025)
 * **[Adam]** Kingma, D. P., & Ba, J. (2015). Adam: A method for stochastic optimization. *International Conference on Learning Representations (ICLR)*. [arXiv](https://arxiv.org/abs/1412.6980)
 
+## Citation
+
+If you use this work, please cite it using `CITATION.cff` or the following BibTeX entry:
+
+```bibtex
+@misc{ahmad2025seqmodeling,
+  author = {{Ahmad Raza}},
+  title = {Sequence Modeling from Scratch: Rigorous NumPy Implementations of RNNs, LSTMs, and Attention},
+  year = {2025},
+  publisher = {GitHub},
+  url = {https://github.com/ahmadrazacdx/seq-modeling-from-scratch}
+}
+```
 ## Feedback
 This repository is a living curriculum. I built this to truly understand the recurrent nets and their dynamics. If you spot a mathematical inconsistency or have a question about a derivation/code, please open an issue.
 
